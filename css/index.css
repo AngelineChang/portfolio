@@ -395,7 +395,10 @@ footer {
   flex-wrap: wrap;
   margin: 0;
   padding: 16px 24px 24px 24px;
-  gap: 8px;
+}
+
+.project-text > * + * {
+  margin-top: 8px;
 }
 
 .project-text .project-text-firstline {
@@ -403,8 +406,11 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  gap: 8px;
   width: 100%;
+}
+
+.project-text .project-text-firstline > * + * {
+  margin-top: 8px;
 }
 
 .project-text .project-text-title {
@@ -442,14 +448,12 @@ footer {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  /* justify-content: center; */
-  gap: 48px;
   padding: 16vh 8% 100px 8%;
 }
 
-/* #about h2 {
-  margin: 20px 0 8px 0;
-} */
+#about > * + * {
+  margin-left: 48px;
+}
 
 #about h1{
   font-size: 32px;
@@ -728,15 +732,24 @@ header .header-pic {
     align-items: flex-start;
     padding: 25px 0 40px 0;
     margin: 0 5%;
-    gap: 8px;
   }
+
+  footer > * + * {
+    margin-top: 8px;
+  }
+
 
   /* About */
   #about {
     flex-direction: column;
     padding: 80px 8%;
-    gap: 32px;
   }
+
+  #about > * + * {
+    margin-top: 32px;
+    margin-left: 0;
+  }
+
   #about-profile-pic {
     width: 100%;
     height: 40vh;
@@ -821,7 +834,10 @@ header .header-pic {
     flex-wrap: wrap;
     margin: 0;
     padding: 8px 16px 16px 16px;
-    gap: 6px;
+  }
+
+  .project-text > * + * {
+    margin-top: 6px;
   }
 
   .project-text .project-text-title h3 {
