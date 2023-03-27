@@ -34,6 +34,50 @@ html, body {
   margin-bottom: 0px;
 }
 
+/* body {
+  display: inline-block;
+  background-image: url('../img/bg-02.png');
+  position: relative;
+  background-position: top center;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+} */
+
+/* kDqXOw {
+    display: inline-block;
+    position: relative;
+    z-index: -20;
+    line-height: 0;
+    opacity: 1;
+    background-color: #dee8ee;
+    background-image: url(https://images.typeform.com/images/w5F3q6pWX23f/background/large);
+    background-position: top center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.kDqXOw::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1;
+    opacity: 0.6;
+    background-color: #FFF;
+}*/
+
 html h1, body h1 {
   font-family: 'Clash Display', sans-serif;
   font-weight: 600;
@@ -231,6 +275,7 @@ nav #nav-right ul li a {
   background-size: 1px 12.5px;
 }
 
+
 header {
   display: flex;
   flex-direction: column;
@@ -395,6 +440,9 @@ footer {
   flex-wrap: wrap;
   margin: 0;
   padding: 16px 24px 24px 24px;
+  background-color: #FFFFFF;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
 }
 
 .project-text > * + * {
@@ -478,7 +526,7 @@ footer {
   position: relative;
   background-position: 50% 50%;
   height: 100%;
-  /* border-radius: 12px; */
+  border-radius: 12px;
 }
 
 #about-description {
@@ -536,7 +584,7 @@ footer {
 /*****************************
    Individual Projects
 ******************************/
-#waste-sorting main, #taipei-go main {
+#waste-sorting main, #taipei-go main, #mrs main {
   display: flex;
   flex-direction: column;
   -webkit-align-items: center;
@@ -558,6 +606,10 @@ header .header-pic {
   background-position: center;
   background-color: #FFFFFF;
   padding-bottom: 30%;
+}
+
+#mrs header .header-pic {
+  background-image: url("../img/mobile-rounding-service-header.png");
 }
 
 #waste-sorting header .header-pic {
@@ -589,7 +641,6 @@ header .header-pic {
 
 .overview p {
   margin: 0 0 18px 0;
-  font-size: 16px;
   line-height: 1.5em;
 }
 .overview {
@@ -601,18 +652,19 @@ header .header-pic {
 }
 
 .overview .overview-card {
-  width: 75%;
+  width: 83%;
   display: flex;
   justify-content: center;
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  box-shadow: 2px 2px 20px 0 rgba(0, 0, 0, .1);
+  /* box-shadow: 2px 2px 20px 0 rgba(0, 0, 0, .1); */
   padding: 30px 0;
 }
 
 .overview .overview-top {
-  width: 90%;
+  width: 91%;
+  margin: 0 15px;
 }
 
 .overview .overview-left {
@@ -683,6 +735,11 @@ header .header-pic {
   padding: 0 5%;
   margin-bottom: 30px;
 
+}
+
+.youtube-video {
+  aspect-ratio: 16/9;
+  width: 100%;
 }
 
 /*************************
@@ -794,6 +851,10 @@ header .header-pic {
     width: 100%;
   }
 
+  .youtube-video {
+    width: 100%;
+  }
+
 }
 
 @media (max-width: 768px) {
@@ -868,6 +929,10 @@ header .header-pic {
   .space {
     width: 100%;
     padding: 30px 0;
+  }
+
+  .youtube-video {
+    width: 100%;
   }
 
   #social-links a {
