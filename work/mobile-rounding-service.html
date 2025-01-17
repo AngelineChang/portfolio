@@ -16,15 +16,18 @@
   <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <meta content="Product design, Interaction Design, UX/UI Design, Yuchi Chang, Angeline Chang, Angeline Yuchi Chang, User Experience Design, Product Designer" name="keywords">
-  <meta content=" " name="description"><!--Fill-->
-  <meta content="Angeline Chang - Product Designer" property="og:title">
-  <meta content=" " property="og:site_name"><!--Fill-->
+  <meta content="Hi, I'm Angeline Chang. I am a user experience designer passionate about shaping usable, useful and delightful interaction." name="description"><!--Fill-->
+  <meta content="Angeline Chang - User Experience Designer" property="og:title">
+  <meta content="Angeline Chang - User Experience Designer" property="og:site_name"><!--Fill-->
   <meta content=" " property="og:image"><!--Fill-->
-  <meta content=" " property="og:description"><!--Fill-->
+  <meta content="Hi, I'm Angeline Chang. I am a product designer passionate about shaping usable, useful and delightful interaction." property="og:description"><!--Fill-->
   <link rel="icon" href="../img/logo-solid.svg">
   <link rel="stylesheet" href="../css/normalize.css">
   <link rel="stylesheet" href="../css/index.css">
-  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@1,900,700,500,400&f[]=clash-display@600,1&f[]=switzer@800,1&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@1,900,700,500,400&f[]=clash-display@600,1&f[]=switzer@800,500,1&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 </head>
 <body id="mrs">
@@ -90,16 +93,16 @@
   </main>
 
   <!-- Footer-->
-   <footer>
+  <footer>
     <div id="copyright">
-      <p id="copyright-text" class="footer-text">© 2024 Designed and coded by Angeline Yuchi Chang.</p>
+      <p id="copyright-text" class="footer-text">© <span id="currentYear"></span> Designed and coded by Angeline Yuchi Chang.</p>
     </div>
     <div id="contact-info">
       <!-- <div class="footer-text">angeline.yuchi [at] gmail [dot] com</div> -->
       <div id="social-links">
         <a target="_blank" href="mailto:angeline.yuchi@gmail.com">Email</a>
         <a target="_blank" href="https://www.linkedin.com/in/yuchi-chang">LinkedIn</a>
-        <a target="_blank" href="../CV_Yuchi_Chang_2024.pdf">Resume</a>
+        <a target="_blank" id="resume-link" href="#">Resume</a>
         <!-- <a target="_blank" href="https://medium.com/@angeline.chang">Medium</a> -->
       </div>
     </div>
@@ -108,4 +111,14 @@
 </html>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
 <script type="text/javascript" src="index.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // Get the current year
+    var currentYear = new Date().getFullYear();
+    document.getElementById('currentYear').textContent = currentYear;
+    // Update the resume link's href
+    var resumeLink = document.getElementById('resume-link');
+    resumeLink.href = `../Resume_Yuchi_Chang_${currentYear}.pdf`;
+  });
+</script>
 <!-- <a href="#" target="_blank"></a>-->
