@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html xmlns:og='http://ogp.me/ns#'>
+<html lang="en" dir="ltr">
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-136349484-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-136349484-1');
+  </script>
+  <title>AICS Design System - Angeline Chang</title>
+  <meta charset="utf-8">
+  <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta content="Product design, Interaction Design, UX/UI Design, Yuchi Chang, Angeline Chang, Angeline Yuchi Chang, User Experience Design, Product Designer" name="keywords">
+  <meta content="Hi, I'm Angeline Chang. I am a user experience designer passionate about shaping usable, useful and delightful interaction." name="description"><!--Fill-->
+  <meta content="Angeline Chang - User Experience Designer" property="og:title">
+  <meta content="Angeline Chang - User Experience Designer" property="og:site_name"><!--Fill-->
+  <meta content=" " property="og:image"><!--Fill-->
+  <meta content="Hi, I'm Angeline Chang. I am a product designer passionate about shaping usable, useful and delightful interaction." property="og:description"><!--Fill-->
+  <link rel="icon" href="../img/logo-solid.svg">
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="../css/index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@1,900,700,500,400&f[]=clash-display@600,1&f[]=switzer@800,500,1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+</head>
+<body id="aics-design-system">
+  <!-- Navigation -->
+  <div class="nav-parent">
+    <nav>
+      <div id="nav-left">
+        <a href="../index.html" class="underline-animation"><img src="../img/logo-transparent.svg" alt="Angeline Chang's logo"></a>
+        <div id="nav-logo"><a href="../index.html" class="underline-animation name-hero">Angeline Chang</a></div>
+      </div>
+      <div id="nav-right">
+        <ul>
+          <li><a href="../index.html" class="underline-active">Work</a></li>
+          <!--<li><a href="../lab/index.html" class="underline-animation">Lab</a></li>-->
+          <li><a href="../about/index.html" class="underline-animation">About</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <!-- Eye-catcher-->
+  <header class="project-header">
+    <div class="header-pic"></div>
+  </header>
+  <!-- Main Content of the page-->
+  <main>
+      <section class="overview">
+        <h1>AICS Design System</h1>
+        <div class="overview-card">
+          <div class="overview-top"><h2>Overview</h2></div>
+          <div class="overview-left">
+            <p>Recognizing the lack of a unified design language and the inefficiencies of redundant UI development, I initiated and led the creation of the Design System from the ground up. I aligned stakeholders and resources with strategic persuasion, defined scalable design principles, designed components, and established processes that bridge design and engineering workflows.
+            </p>
+            <p>AICS Design System is the central UI design infrastructure and interface development communication tool within our organization. Acting as the backbone for multiple healthcare information products, it consists of a Figma component library, a corresponding front-end UI kit, an interactive demo website, and comprehensive design guidelines, ensuring consistency and efficiency across teams.
+            </p>
+            <p>As our product ecosystem evolved, I continuously optimized the usability, accessibility, and responsiveness of the system through iterative user testing and internal feedback, ensuring that the system balanced micro-level flexibility with macro-level scalability.
+            </p>
+          </div>
+          <div class="overview-right">
+            <h3>Role</h3>
+            <p>Project Owner<br>
+              Lead Designer</p>
+            <h3>Main tasks</h3>
+            <p>UI Component design<br>
+              Token design<br>
+              Guideline design<br>
+              Design critique<br>
+              Usability testing<br>
+              Inclusive design<br>
+              Figma design operation<br>
+              Project management
+            </p>
+            <h3>Deliverable</h3>
+            <p>Figma component library<br>
+            Design Guideline</p>
+            <h3>Time</h3>
+            <p>2022-2024</p>
+
+          </div>
+        </div>
+      </section>
+
+  </main>
+
+  <!-- Footer-->
+  <footer>
+    <div id="copyright">
+      <p id="copyright-text" class="footer-text">© <span id="currentYear"></span> Designed and coded by Angeline Yuchi Chang.</p>
+    </div>
+    <div id="contact-info">
+      <!-- <div class="footer-text">angeline.yuchi [at] gmail [dot] com</div> -->
+      <div id="social-links">
+        <a target="_blank" href="mailto:angeline.yuchi@gmail.com">Email</a>
+        <a target="_blank" href="https://www.linkedin.com/in/yuchi-chang">LinkedIn</a>
+        <a target="_blank" id="resume-link" href="#">Resume</a>
+        <!-- <a target="_blank" href="https://medium.com/@angeline.chang">Medium</a> -->
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+<script type="text/javascript" src="index.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // Get the current year
+    var currentYear = new Date().getFullYear();
+    document.getElementById('currentYear').textContent = currentYear;
+    // Update the resume link's href
+    var resumeLink = document.getElementById('resume-link');
+    resumeLink.href = `../Resume_Yuchi_Chang_${currentYear}.pdf`;
+  });
+</script>
+<!-- <a href="#" target="_blank"></a>-->
