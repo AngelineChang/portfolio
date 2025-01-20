@@ -584,7 +584,7 @@ footer {
 /*****************************
    Individual Projects
 ******************************/
-#waste-sorting main, #taipei-go main, #mrs main, #ai-pacs-viewer main{
+#waste-sorting main, #taipei-go main, #mrs main, #ai-pacs-viewer main, #aics-design-system main, #xhis main {
   display: flex;
   flex-direction: column;
   -webkit-align-items: center;
@@ -608,12 +608,20 @@ header .header-pic {
   padding-bottom: 30%;
 }
 
-#mrs header .header-pic {
-  background-image: url("../img/mobile-rounding-service-header.png");
+#xhis header .header-pic {
+  background-image: url("../img/xhis.png");
+}
+
+#aics-design-system header .header-pic {
+  background-image: url("../img/honey-design-system.png");
 }
 
 #ai-pacs-viewer header .header-pic {
   background-image: url("../img/ai-pacs-viewer.png");
+}
+
+#mrs header .header-pic {
+  background-image: url("../img/mobile-rounding-service-header.png");
 }
 
 #waste-sorting header .header-pic {
