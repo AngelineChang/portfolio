@@ -67,7 +67,7 @@
             <br><p>Hi, I’m Angeline Yuchi Chang (張育綺), currently a product designer at <a target="_blank" href="https://aics.asus.com/" class="link">ASUS Intelligent Cloud Services (AICS)</a> based in Taipei, Taiwan.<br><br>
               In my professional career, I have worked on organization-wise design system, large-scale enterprise products in web and mobile, and AI system. I streamlined healthcare professionals’ interconnected workflows and supported their clinical decisions through researching and designing intuitive enterprise AI software experience. I also helped fellow designers and engineers to design and build cohesive product experience faster through the creation, management, and evolvement of the organization’s design system.<br><br>
               My interest in user experience design grows from my fascination with human judgement and decision-making process as well as my zeal for crafting experiences. I’m passionate about designing products that augment human abilities with emerging technologies to unleash the potential of human-computer collaboration.<br><br>
-              Learn more about my experience and reach me at <a target="_blank" href="https://www.linkedin.com/in/yuchi-chang" class="link">LinkedIn</a> / <a target="_blank" href="mailto:angeline.yuchi@gmail.com" class="link">Email</a> / <a target="_blank" href="../Resume_Yuchi_Chang_2024.pdf" class="link">Resume</a>.</p>
+              Learn more about my experience and reach me at <a target="_blank" href="https://www.linkedin.com/in/yuchi-chang" class="link">LinkedIn</a> / <a target="_blank" href="mailto:angeline.yuchi@gmail.com" class="link">Email</a> / <a target="_blank" id="intro-resume-link" href="#" class="link">Resume</a>.</p>
         </div>
       </section>
     </div>
@@ -99,6 +99,9 @@
     document.getElementById('currentYear').textContent = currentYear;
     // Update the resume link's href
     var resumeLink = document.getElementById('resume-link');
+    resumeLink.href = `../Resume_Yuchi_Chang_${currentYear}.pdf`;
+    // Update the intro paragraph's resume link's href
+    var resumeLink = document.getElementById('intro-resume-link');
     resumeLink.href = `../Resume_Yuchi_Chang_${currentYear}.pdf`;
   });
 </script>
